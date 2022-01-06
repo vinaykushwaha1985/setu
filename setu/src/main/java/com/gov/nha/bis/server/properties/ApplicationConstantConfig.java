@@ -1,0 +1,601 @@
+package com.gov.nha.bis.server.properties;
+/**
+ * @author Vinay Kushwaha
+ * @Email  vinaykushwaha85@gmail.com
+
+ */
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.stereotype.Component;
+
+
+@Component
+@Configuration
+@PropertySource({"classpath:application.properties"})
+public class ApplicationConstantConfig {
+
+	@Value("${CSC_CLIENT_ID}")
+	public String CSC_CLIENT_ID;
+
+	@Value("${CSC_CLIENT_APP_NAME}")
+	public String CSC_CLIENT_APP_NAME;
+
+	@Value("${CSC_CLIENT_SECRET}")
+	public String CSC_CLIENT_SECRET;
+
+
+	@Value("${CSC_CLIENT_TOKEN}")
+	public String CSC_CLIENT_TOKEN;
+
+
+	@Value("${CSC_CONNECT_SERVER_URI}")
+	public String CSC_CONNECT_SERVER_URI;
+
+	@Value("${CSC_CLIENT_CALLBACK_URI}")
+	public String CSC_CLIENT_CALLBACK_URI;
+
+	@Value("${CSC_VERSION}")
+	public String CSC_VERSION;
+
+	@Value("${PENDING_REQ_ID_APP_URL}")
+	public String PENDING_REQ_ID_APP_URL;
+
+	@Value("${SECC_KYC_REF_ID_URL}")
+	public String SECC_KYC_REF_ID_URL;
+
+	@Value("${BEN_APPROVE_STATUS_URL}")
+	public String BEN_APPROVE_STATUS_URL;
+
+	@Value("${SECC_RURAL_BEN_SEARCH_URL}")
+	public String SECC_RURAL_BEN_SEARCH_URL;
+
+	@Value("${SECC_URBAN_BEN_SEARCH_URL}")
+	public String SECC_URBAN_BEN_SEARCH_URL;
+
+	@Value("${STATE_MASTER_URBAN_URL}")
+	public String STATE_MASTER_URBAN_URL;
+
+	@Value("${STATE_MASTER_RURAL_URL}")
+	public String STATE_MASTER_RURAL_URL;
+
+	@Value("${DEMO_AUTH_URL}")
+	public String DEMO_AUTH_URL;
+
+	@Value("${OTP_GEN_URL}")
+	public String OTP_GEN_URL;
+
+
+	@Value("${OTP_KYC_URL}")
+	public String OTP_KYC_URL;
+
+	@Value("${SAVE_KYC_URL}")
+	public String SAVE_KYC_URL;
+
+	@Value("${NHA_BIS_CARD_DOWNLOAD_URL}")
+	public String NHA_BIS_CARD_DOWNLOAD_URL;
+
+
+	@Value("${NHA_BIS_CARD_Client_ID}")
+	public String NHA_BIS_CARD_Client_ID;
+
+	@Value("${NHA_BIS_CARD_Client_Secret}")
+	public String NHA_BIS_CARD_Client_Secret;
+
+	@Value("${NHA_BIS_CARD_Token_URL}")
+	public String NHA_BIS_CARD_Token_URL;
+
+	@Value("${OTP_UIDAI_AUTH_URL}")
+	public String OTP_UIDAI_AUTH_URL;
+
+	@Value("${BIS_SMS_SEND_URL}")
+	public String BIS_SMS_SEND_URL;
+
+	@Value("${BIS_SMS_VERIFY_URL}")
+	public String BIS_SMS_VERIFY_URL;
+
+
+
+	@Value("${NHA_BIS_CREATE_CARD_URL}")
+	public String NHA_BIS_CREATE_CARD_URL;
+
+
+	@Value("${NHA_BIS_CREATE_CARD_Client_ID}")
+	public String NHA_BIS_CREATE_CARD_Client_ID;
+
+	@Value("${NHA_BIS_CREATE_CARD_Client_Secret}")
+	public String NHA_BIS_CREATE_CARD_Client_Secret;
+
+	@Value("${NHA_BIS_CREATE_CARD_Token_URL}")
+	public String NHA_BIS_CREATE_CARD_Token_URL;
+
+
+
+
+	@Value("${NHA_BIS_UID_TOKEN_URL}")
+	public String NHA_BIS_UID_TOKEN_URL;
+
+
+	@Value("${NHA_BIS_UID_TOKEN_Client_ID}")
+	public String NHA_BIS_UID_TOKEN_Client_ID;
+
+	@Value("${NHA_BIS_UID_TOKEN_Client_Secret}")
+	public String NHA_BIS_UID_TOKEN_Client_Secret;
+
+	@Value("${NHA_BIS_UID_TOKEN_Token_URL}")
+	public String NHA_BIS_UID_TOKEN_Token_URL;
+
+	@Value("${NHA_BIS_OPERATION_TYPE}")
+	public String NHA_BIS_OPERATION_TYPE;
+
+
+	@Value("${BIO_KYC_URL}")
+	public String BIO_KYC_URL;
+
+	@Value("${OTP_GEN_MOB_URL}")
+	public String OTP_GEN_MOB_URL;
+
+	@Value("${NHA_BIS_PROFILE_DETAIL_URL}")
+	public String NHA_BIS_PROFILE_DETAIL_URL;
+
+	@Value("${NHA_BIS_PROFILE_DETAIL_CLIENT_ID}")
+	public String NHA_BIS_PROFILE_DETAIL_CLIENT_ID;
+
+	@Value("${NHA_BIS_PROFILE_DETAIL_CLIENT_SECRET}")
+	public String NHA_BIS_PROFILE_DETAIL_CLIENT_SECRET;
+
+	@Value("${NHA_BIS_PROFILE_DETAIL_TOKEN_URL}")
+	public String NHA_BIS_PROFILE_DETAIL_TOKEN_URL;
+
+	@Value("${NHA_BIS_CHECK_MOBILE_NUMBER_URL}")
+	public String NHA_BIS_CHECK_MOBILE_NUMBER_URL;
+
+	@Value("${NHA_BIS_CHECK_MOBILE_NUMBER_ID}")
+	public String NHA_BIS_CHECK_MOBILE_NUMBER_ID;
+
+
+	@Value("${NHA_BIS_CHECK_MOBILE_NUMBER_Client_Secret}")
+	public String NHA_BIS_CHECK_MOBILE_NUMBER_Client_Secret;
+
+	@Value("${NHA_BIS_CHECK_MOBILE_NUMBER_Token_URL}")
+	public String NHA_BIS_CHECK_MOBILE_NUMBER_Token_URL;
+
+
+	@Value("${NHA_BIS_USER_VALIDATE_API}")
+	public String NHA_BIS_USER_VALIDATE_API;
+
+	@Value("${NHA_BIS_USER_VALIDATE_CLIENT_ID}")
+	public String NHA_BIS_USER_VALIDATE_CLIENT_ID;
+
+	@Value("${NHA_BIS_USER_VALIDATE_CLIENT_SECRET}")
+	public String NHA_BIS_USER_VALIDATE_CLIENT_SECRET;
+
+	@Value("${NHA_BIS_USER_VALIDATE_TOKEN_URL}")
+	public String NHA_BIS_USER_VALIDATE_TOKEN_URL;
+
+
+	@Value("${NHA_BIS_APPLICATION_TYPE}")
+	public String NHA_BIS_APPLICATION_TYPE;
+
+
+	@Value("${NHA_BIS_APPLICATION_LOGIN_MODE}")
+	public String NHA_BIS_APPLICATION_LOGIN_MODE;
+
+	@Value("${OTP_ENBLE_FLAG}")
+	public String OTP_ENBLE_FLAG;
+	
+	@Value("${OTP_ENBLE_FLAG_BIS2_0}")
+	public String OTP_ENBLE_FLAG_BIS2_0;
+	
+
+	@Value("${DEMO_AUTH_UID_TOKEN}")
+	public String DEMO_AUTH_UID_TOKEN;
+
+	@Value("${NHA_BIS_DEMO_UPDATE_UIDTOKEN_URL}")
+	public String NHA_BIS_DEMO_UPDATE_UIDTOKEN_URL;
+
+	@Value("${NHA_BIS_DEMO_UPDATE_UIDTOKEN_TOKEN_URL}")
+	public String NHA_BIS_DEMO_UPDATE_UIDTOKEN_TOKEN_URL;		
+
+	@Value("${NHA_BIS_DEMO_UPDATE_UIDTOKEN_CLIENT_ID}")
+	public String NHA_BIS_DEMO_UPDATE_UIDTOKEN_CLIENT_ID;
+	@Value("${NHA_BIS_DEMO_UPDATE_UIDTOKEN_CLIENT_SECRET}")
+	public String NHA_BIS_DEMO_UPDATE_UIDTOKEN_CLIENT_SECRET;
+
+
+	@Value("${NHA_BIS_UPDATE_CARD_STATUS_URL}")
+	public String NHA_BIS_UPDATE_CARD_STATUS_URL;
+	
+	@Value("${NHA_BIS_UPDATE_CARD_STATUS_CLIENT_ID}")
+	public String NHA_BIS_UPDATE_CARD_STATUS_CLIENT_ID;
+	
+	@Value("${NHA_BIS_UPDATE_CARD_STATUS_CLIENT_SECRET}")
+	public String NHA_BIS_UPDATE_CARD_STATUS_CLIENT_SECRET;
+	
+	@Value("${NHA_BIS_UPDATE_CARD_STATUS_TOKEN_URL}")
+	public String NHA_BIS_UPDATE_CARD_STATUS_TOKEN_URL;
+	
+	
+	@Value("${DEMO_DECLARE_DATA_SAVE_URL}")
+	public String DEMO_DECLARE_DATA_SAVE_URL;
+	
+	@Value("${BEN_UPDATE_STATUS_RURAL}")
+	public String BEN_UPDATE_STATUS_RURAL;
+	
+	@Value("${BEN_UPDATE_STATUS_URBAN}")
+	public String BEN_UPDATE_STATUS_URBAN;
+	
+	@Value("${TXN_DOWN_CARD_URL}")
+	public String TXN_DOWN_CARD_URL;
+	
+	
+	
+
+	@Value("${UMP_USER_REG_JWT_URL}")
+	public String UMP_USER_REG_JWT_URL;
+	
+	@Value("${UMP_USER_REG_JWT_CLIENT_ID}")
+	public String UMP_USER_REG_JWT_CLIENT_ID;
+	
+	@Value("${UMP_USER_REG_JWT_CLIENT_SECRET}")
+	public String UMP_USER_REG_JWT_CLIENT_SECRET;
+	
+	@Value("${UMP_USER_REG_JWT_TOKEN_URL}")
+	public String UMP_USER_REG_JWT_TOKEN_URL;
+	
+	@Value("${UMP_USER_SELF_REGISTRATION_URL}")
+	public String UMP_USER_SELF_REGISTRATION_URL;
+	
+	@Value("${UMP_USER_AUTHENTICATION_URL}")
+	public String UMP_USER_AUTHENTICATION_URL;
+	
+	
+	@Value("${UMP_DECRYPT_JWT_URL}")
+	public String UMP_DECRYPT_JWT_URL;
+	
+	@Value("${UMP_DECRYPT_JWT_CLIENT_ID}")
+	public String UMP_DECRYPT_JWT_CLIENT_ID;
+	
+	@Value("${UMP_DECRYPT_JWT_CLIENT_SECRET}")
+	public String UMP_DECRYPT_JWT_CLIENT_SECRET;
+	
+	@Value("${UMP_DECRYPT_JWT_TOKEN_URL}")
+	public String UMP_DECRYPT_JWT_TOKEN_URL;
+	
+	
+	@Value("${NHA_BIS_GUID_VERIFY_STATUS_URL}")
+	public String NHA_BIS_GUID_VERIFY_STATUS_URL;
+	
+	@Value("${NHA_BIS_GUID_VERIFY_STATUS_CLIENT_ID}")
+	public String NHA_BIS_GUID_VERIFY_STATUS_CLIENT_ID;
+	
+	@Value("${NHA_BIS_GUID_VERIFY_STATUS_CLIENT_SECRET}")
+	public String NHA_BIS_GUID_VERIFY_STATUS_CLIENT_SECRET;
+	
+	@Value("${NHA_BIS_GUID_VERIFY_STATUS_TOKEN_URL}")
+	public String NHA_BIS_GUID_VERIFY_STATUS_TOKEN_URL;
+	
+	@Value("${NHA_BIS_FUZZY_SERVICE_URL}")
+	public String NHA_BIS_FUZZY_SERVICE_URL;
+	
+	@Value("${NHA_BIS_FUZZY_MATCH_SCORE}")
+	public int NHA_BIS_FUZZY_MATCH_SCORE;
+	
+	@Value("${NAH_BIS_DEMO_AUTH_FETCH_URL}")
+	public String NAH_BIS_DEMO_AUTH_FETCH_URL;
+	
+	@Value("${STATE_24_TOKEN}")
+	public String STATE_24_TOKEN;
+	
+	
+	
+	@Value("${STATE_24_GATEWAY_API_TOKEN_URL}")
+	public String STATE_24_GATEWAY_API_TOKEN_URL;
+	
+	@Value("${STATE_24_GATEWAY_API_CLIENT_ID}")
+	public String STATE_24_GATEWAY_API_CLIENT_ID;
+	
+	@Value("${STATE_24_GATEWAY_API_CLIENT_ID_SECRET}")
+	public String STATE_24_GATEWAY_API_CLIENT_ID_SECRET;
+	
+	@Value("${STATE_24_RATION_CARD_URL}")
+	public String STATE_24_RATION_CARD_URL;
+	
+	
+	@Value("${STATE_24_ID_TYPE}")
+	public String STATE_24_ID_TYPE;
+	
+	
+	@Value("${RATION_CARD_DATA_SAVE_URL}")
+	public String RATION_CARD_DATA_SAVE_URL;
+	
+	@Value("${RATION_CARD_DATA_FETCH_URL}")
+	public String RATION_CARD_DATA_FETCH_URL;
+	
+	@Value("${UPDATE_CARD_STATUS_URL}")
+	public String UPDATE_CARD_STATUS_URL;
+	
+	@Value("${RATION_CARD_SERVICE_ENABLE_LIST}")
+	public String RATION_CARD_SERVICE_ENABLE_LIST;
+	
+	@Value("${SEARCH_SERVICE_REDIS_ENABLE_LIST}")
+	public String SEARCH_SERVICE_REDIS_ENABLE_LIST;
+	
+	@Value("${REDIS_UPDATE_CARD_STATUS_URL}")
+	public String REDIS_UPDATE_CARD_STATUS_URL;
+	
+	
+	@Value("${REDIS_SECC_BEN_SEARCH_URL}")
+	public String REDIS_SECC_BEN_SEARCH_URL;
+
+	
+	
+	@Value("${STATE_9_TOKEN}")
+	public String STATE_9_TOKEN;
+	@Value("${STATE_9_GATEWAY_API_TOKEN_URL}")
+	public String STATE_9_GATEWAY_API_TOKEN_URL;
+	@Value("${STATE_9_GATEWAY_API_CLIENT_ID}")
+	public String STATE_9_GATEWAY_API_CLIENT_ID;
+	@Value("${STATE_9_GATEWAY_API_CLIENT_ID_SECRET}")
+	public String STATE_9_GATEWAY_API_CLIENT_ID_SECRET;
+	@Value("${STATE_9_RATION_CARD_URL}")
+	public String STATE_9_RATION_CARD_URL;
+	
+	@Value("${STATE_9_ID_TYPE}")
+	public String STATE_9_ID_TYPE;
+	
+	@Value("${STATE_RATION_RESPONSE_FORMAT_LIST}")
+	public String STATE_RATION_RESPONSE_FORMAT_LIST;
+	
+	@Value("${REDIS_DEMO_DECLARE_DATA_SAVE_URL}")
+	public String REDIS_DEMO_DECLARE_DATA_SAVE_URL;
+	
+	@Value("${REDIS_DEMO_DECLARE_FETCH_URL}")
+	public String REDIS_DEMO_DECLARE_FETCH_URL;
+	
+	@Value("${REDIS_SAVE_KYC_URL}")
+	public String REDIS_SAVE_KYC_URL;
+	
+	
+	@Value("${REDIS_RATION_CARD_DATA_FETCH_URL}")
+	public String REDIS_RATION_CARD_DATA_FETCH_URL;
+	
+	@Value("${REDIS_RATION_CARD_DATA_SAVE_URL}")
+	public String REDIS_RATION_CARD_DATA_SAVE_URL;
+	
+	
+	@Value("${BIS_OTP_SEND_URL}")
+	public String BIS_OTP_SEND_URL;
+	
+	@Value("${BIS_OTP_VERIFY_URL}")
+	public String BIS_OTP_VERIFY_URL;
+	@Value("${BIS_GET_HHID_DATA_URL}")
+	public String BIS_GET_HHID_DATA_URL;
+	
+	@Value("${STATE_1_ACCESS_STATE}")
+	public String STATE_1_ACCESS_STATE;
+	
+	@Value("${STATE_1_ACCESS_USERID}")
+	public String STATE_1_ACCESS_USERID;
+	
+	@Value("${STATE_1_ACCESS_PASSWORD}")
+	public String STATE_1_ACCESS_PASSWORD;
+	
+	@Value("${STATE_1_ACCESS_AUTHSTRING}")
+	public String STATE_1_ACCESS_AUTHSTRING;
+	
+	@Value("${STATE_1_ACCESS_CODE_URL}")
+	public String STATE_1_ACCESS_CODE_URL;
+	
+	@Value("${STATE_1_RATION_CARD_URL}")
+	public String STATE_1_RATION_CARD_URL;
+	
+	@Value("${STATE_1_ID_TYPE}")
+	public String STATE_1_ID_TYPE;
+	
+	@Value("${STATE_1_RATION_CARD_ACCESS_VAL1}")
+	public String STATE_1_RATION_CARD_ACCESS_VAL1;
+	
+	@Value("${STATE_1_RATION_CARD_ACCESS_VAL2}")
+	public String STATE_1_RATION_CARD_ACCESS_VAL2;
+	
+	@Value("${STATE_1_RATION_CARD_ENCKEY}")
+	public String STATE_1_RATION_CARD_ENCKEY;
+	
+	@Value("${STATE_1_RATION_CARD_CONSENT}")
+	public String STATE_1_RATION_CARD_CONSENT;
+	
+	@Value("${STATE_RATION_RESPONSE_FORMAT_LIST_2}")
+	public String STATE_RATION_RESPONSE_FORMAT_LIST_2;
+	
+	@Value("${GUID_DATA_FETCH_URL}")
+	public String GUID_DATA_FETCH_URL;
+	
+	@Value("${SECC_ADD_FAMILY_DATA_URL}")
+	public String SECC_ADD_FAMILY_DATA_URL;
+	
+	@Value("${FEM_UPLOAD_DOCUMENT_URL}")
+	public String FEM_UPLOAD_DOCUMENT_URL;
+	
+	@Value("${NHA_SMS_SEND_URL}")
+	public String NHA_SMS_SEND_URL;
+	
+	@Value("${FACE_ID_BARCODE_GEN_URL}")
+	public String FACE_ID_BARCODE_GEN_URL;
+	
+	@Value("${FACE_ID_BARCODE_DETECT_URL}")
+	public String FACE_ID_BARCODE_DETECT_URL;
+	
+	
+	@Value("${STATE_6_ACCESS_STATE}")
+	public String STATE_6_ACCESS_STATE;
+	
+	@Value("${STATE_6_ACCESS_USERID}")
+	public String STATE_6_ACCESS_USERID;
+	
+	@Value("${STATE_6_ACCESS_PASSWORD}")
+	public String STATE_6_ACCESS_PASSWORD;
+	
+	@Value("${STATE_6_ACCESS_AUTHSTRING}")
+	public String STATE_6_ACCESS_AUTHSTRING;
+	
+	@Value("${STATE_6_ACCESS_CODE_URL}")
+	public String STATE_6_ACCESS_CODE_URL;
+	
+	@Value("${STATE_6_RATION_CARD_URL}")
+	public String STATE_6_RATION_CARD_URL;
+	
+	@Value("${STATE_6_ID_TYPE}")
+	public String STATE_6_ID_TYPE;
+	
+	
+	@Value("${STATE_18_ACCESS_STATE}")
+	public String STATE_18_ACCESS_STATE;
+	
+	@Value("${STATE_18_ACCESS_USERID}")
+	public String STATE_18_ACCESS_USERID;
+	
+	@Value("${STATE_18_ACCESS_PASSWORD}")
+	public String STATE_18_ACCESS_PASSWORD;
+	
+	@Value("${STATE_18_ACCESS_AUTHSTRING}")
+	public String STATE_18_ACCESS_AUTHSTRING;
+	
+	@Value("${STATE_18_ACCESS_CODE_URL}")
+	public String STATE_18_ACCESS_CODE_URL;
+	
+	@Value("${STATE_18_RATION_CARD_URL}")
+	public String STATE_18_RATION_CARD_URL;
+	
+	@Value("${STATE_18_ID_TYPE}")
+	public String STATE_18_ID_TYPE;
+	
+	@Value("${STATE_18_RATION_CARD_ACCESS_VAL1}")
+	public String STATE_18_RATION_CARD_ACCESS_VAL1;
+	
+	@Value("${STATE_18_RATION_CARD_ACCESS_VAL2}")
+	public String STATE_18_RATION_CARD_ACCESS_VAL2;
+	
+	@Value("${STATE_18_RATION_CARD_ENCKEY}")
+	public String STATE_18_RATION_CARD_ENCKEY;
+	
+	@Value("${STATE_18_RATION_CARD_CONSENT}")
+	public String STATE_18_RATION_CARD_CONSENT;
+	
+	@Value("${STATE_6_RATION_CARD_ACCESS_VAL1}")
+	public String STATE_6_RATION_CARD_ACCESS_VAL1;
+	
+	@Value("${STATE_6_RATION_CARD_ACCESS_VAL2}")
+	public String STATE_6_RATION_CARD_ACCESS_VAL2;
+	
+	@Value("${STATE_6_RATION_CARD_ENCKEY}")
+	public String STATE_6_RATION_CARD_ENCKEY;
+	
+	@Value("${STATE_6_RATION_CARD_CONSENT}")
+	public String STATE_6_RATION_CARD_CONSENT;
+	
+	@Value("${NFSA_CARD_STATUS_URL}")
+	public String NFSA_CARD_STATUS_URL;
+	
+	@Value("${BIO_AUTH_URL}")
+	public String BIO_AUTH_URL;
+	
+	
+	@Value("${GEN_GUID_PMJAYID_URL}")
+	public String GEN_GUID_PMJAYID_URL;
+	
+	@Value("${SAVE_NFSA_BENEFICIARY_URL}")
+	public String SAVE_NFSA_BENEFICIARY_URL;
+	
+	
+	@Value("${SAVE_AYUSHMAN_CARD_URL}")
+	public String SAVE_AYUSHMAN_CARD_URL;
+	
+	@Value("${SAVE_NFSA_KYC_URL}")
+	public String SAVE_NFSA_KYC_URL;
+	
+	@Value("${NFSA_RATION_CARD_DATA_SAVE_URL}")
+	public String NFSA_RATION_CARD_DATA_SAVE_URL;
+	
+	
+	@Value("${NFSA_AYUSHMAN_CARD_URL}")
+	public String NFSA_AYUSHMAN_CARD_URL;
+	
+	
+	@Value("${LOGIN_HISTORY_URL}")
+	public String LOGIN_HISTORY_URL;
+	
+	
+	@Value("${EVENT_HISTORY_URL}")
+	public String EVENT_HISTORY_URL;
+	
+	@Value("${HELP_DOC_PATH}")
+	public String HELP_DOC_PATH;
+	
+	@Value("${HELP_DOC_NAME}")
+	public String HELP_DOC_NAME;
+	
+	@Value("${STATE_SCHEME_ADCD_URL}")
+	public String STATE_SCHEME_ADCD_URL;
+	
+	@Value("${STATE_SCHEME_LIST_URL}")
+	public String STATE_SCHEME_LIST_URL;
+	
+	@Value("${STATE_SCHEME_MMJA_URL}")
+	public String STATE_SCHEME_MMJA_URL;
+	
+	
+	@Value("${BOCW_STATE_9_GATEWAY_API_TOKEN_URL}")
+	public String BOCW_STATE_9_GATEWAY_API_TOKEN_URL;
+	
+	@Value("${BOCW_STATE_9_GATEWAY_API_CLIENT_ID}")
+	public String BOCW_STATE_9_GATEWAY_API_CLIENT_ID;
+	
+	
+	@Value("${BOCW_STATE_9_GATEWAY_API_CLIENT_ID_SECRET}")
+	public String BOCW_STATE_9_GATEWAY_API_CLIENT_ID_SECRET;
+	
+	
+	@Value("${BOCW_STATE_9_URL}")
+	public String BOCW_STATE_9_URL;
+	
+	@Value("${BOCW_STATE_9_ID_TYPE}")
+	public String BOCW_STATE_9_ID_TYPE;
+	
+	
+	@Value("${BEN_SCHEME_SAVE_DATA_URL}")
+	public String BEN_SCHEME_SAVE_DATA_URL;
+	
+	@Value("${MMJA_RURAL_BEN_SEARCH_URL}")
+	public String MMJA_RURAL_BEN_SEARCH_URL;
+	
+	@Value("${MMJA_URBAN_BEN_SEARCH_URL}")
+	public String MMJA_URBAN_BEN_SEARCH_URL;
+	
+	@Value("${BEN_SCHEME_CARD_SAVE_DATA_URL}")
+	public String BEN_SCHEME_CARD_SAVE_DATA_URL;
+	
+	@Value("${BEN_SCHEME_CARD_FETCH_DATA_URL}")
+	public String BEN_SCHEME_CARD_FETCH_DATA_URL;
+	
+	@Value("${APP_AADHAAR_AUTH_HISTORY_URL}")
+	public String APP_AADHAAR_AUTH_HISTORY_URL;
+	
+	@Value("${BEN_SCHEME_CARD_UPDATE_DATA_URL}")
+	public String BEN_SCHEME_CARD_UPDATE_DATA_URL;
+	
+	@Value("${BEN_OTHER_SCHEME_SEARCH_URL}")
+	public String BEN_OTHER_SCHEME_SEARCH_URL;
+	
+	@Value("${BEN_AADHAAR_SCHEME_SEARCH_URL}")
+	public String BEN_AADHAAR_SCHEME_SEARCH_URL;
+	
+	@Value("${STATE_SUB_SCHEME_LIST_URL}")
+	public String STATE_SUB_SCHEME_LIST_URL;
+	
+	@Value("${STATE_SUB_SCHEME_DOCUMENT_LIST_URL}")
+	public String STATE_SUB_SCHEME_DOCUMENT_LIST_URL;
+	
+	@Value("${SAVE_SUB_SCHEME_DOCUMENT_URL}")
+	public String SAVE_SUB_SCHEME_DOCUMENT_URL;
+}
